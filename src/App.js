@@ -27,18 +27,18 @@ const handleSubmit = (e) => {
       {!isLoggedIn && (
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Username:
+          <label>Username
             <input type='text' value={username} onChange={(e) => setUsername(e.target.value)} required />
           </label>
           <br></br>
-          <label>Password:
+          <label>Password
             <input type='text' value={password} onChange={(e) => setPassword(e.target.value)} required />
           </label>
         </div>
         <button type='submit'>Submit</button>
         {message && <h2>{message}</h2>}
       </form>
-      )};
+      )}
     </div>
   );
 }

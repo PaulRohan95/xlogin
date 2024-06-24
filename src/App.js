@@ -36,6 +36,7 @@ const handleSubmit = (e) => {
           </label>
         </div>
         <button type='submit'>Submit</button>
+        {message && <h2>{message}</h2>}
       </form>
       )};
     </div>

@@ -28,12 +28,12 @@ const handleSubmit = (e) => {
       <form onSubmit={handleSubmit}>
         <div>
           <label>Username:
-            <input type='text' onChange={(e) => setUsername(e.target.value)} required />
           </label>
+            <input type='text' onChange={(e) => setUsername(e.target.value)} required />
           <br></br>
           <label>Password:
-            <input type='text' onChange={(e) => setPassword(e.target.value)} required />
           </label>
+            <input type='text' onChange={(e) => setPassword(e.target.value)} required />
         </div>
         <button type='submit'>Submit</button>
         {message && <h2>{message}</h2>}

@@ -27,12 +27,12 @@ const handleSubmit = (e) => {
       {!isLoggedIn && (
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Username
-            <input type='text' value={username} onChange={(e) => setUsername(e.target.value)} required />
+          <label>Username:
+            <input type='text' onChange={(e) => setUsername(e.target.value)} required />
           </label>
           <br></br>
-          <label>Password
-            <input type='text' value={password} onChange={(e) => setPassword(e.target.value)} required />
+          <label>Password:
+            <input type='text' onChange={(e) => setPassword(e.target.value)} required />
           </label>
         </div>
         <button type='submit'>Submit</button>

@@ -33,7 +33,7 @@ const handleSubmit = (e) => {
           <br></br>
           <label>Password:
           </label>
-            <input type='text' onChange={(e) => setPassword(e.target.value)} required />
+            <input type='password' onChange={(e) => setPassword(e.target.value)} required />
         </div>
         <button type='submit'>Submit</button>
         {message && <h2>{message}</h2>}
